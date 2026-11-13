@@ -1,0 +1,13 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1000 / 580;
+}
+
+.masthead .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}

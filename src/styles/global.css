@@ -1,0 +1,80 @@
+:root {
+  --bg: #a3a791;
+  --panel: #8d927a;
+  --ink: #0f4c1a;
+  --cream: #f7f4ee;
+  --yellow: #e6b423;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: Outfit, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image: url("/images/paper-grain.png");
+  background-size: 720px;
+  background-blend-mode: soft-light;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+.page {
+  padding: 3.5rem 8vw 5rem;
+}
+
+.page h1 {
+  margin: 0 0 0.75rem;
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.page p {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 1.125rem;
+}
+
+.page .kicker {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  color: #8d8a62;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.back-link {
+  margin-top: 1.6rem;
+}
+
+.back-link a {
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .page {
+    padding: 2.2rem 1.25rem 3rem;
+  }
+}
